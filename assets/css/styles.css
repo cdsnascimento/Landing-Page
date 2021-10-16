@@ -11,12 +11,15 @@ font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
-
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 20rem;
   color: var(--primary-color);
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +51,10 @@ h6{
   font-size: 35rem;
 }
 
+p {
+  margin-bottom: 30rem;
+}
+
 .main-bg-d{
   background-image: url("/assets/img/main-bg-d.svg");
   background-size: cover;
@@ -62,8 +69,15 @@ h6{
   color: var(--primary-color);
 }
 
+.main-bg-w h2 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom:30rem;
+}
+
 .white-bg {
   background: var(--white);
+  color: var(--primary-color);
 }
 
 .main-content {
@@ -79,6 +93,7 @@ h6{
 .menu {
   color: var(--primary-color);
   position: fixed;
+  z-index: 1;
   left: 0;
   right: 0;
   width: 100%;
@@ -128,4 +143,47 @@ h6{
 .menu ul li a:hover:after{
   width: 50%;
   left: 25%;
+}
+
+.menu-spacing {
+  height: 64rem;
+}
+
+section h2 {
+  color: var(--white);
+}
+
+.intro-content {
+  position: relative;
+  top: -80rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.intro-text-content h2 {
+  font-size: 60rem;
+  margin-bottom: 50rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.intro-img img {
+  max-width: 100%;
+}
+
+.top3-content {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: center;
+  max-width: 640rem;
+  text-align: center;
 }
