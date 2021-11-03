@@ -376,7 +376,7 @@ tfoot td, thead th {
   border: 1rem solid var(--primary-color);
 }
 
-@media (max-width: 800px){
+@media (max-width: 768px){
   .intro-content,
   .grid {
     grid-template-columns: 1fr;
